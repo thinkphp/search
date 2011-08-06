@@ -145,8 +145,7 @@
                   target.getAttribute('href').indexOf(fs) !== -1) {
                   q.value = target.getAttribute('href').replace(fs,''); 
                   get(event);
-                  event.preventDefault();
-                  event.stopPropagation();  
+                  cancelClick(event);
             }
       };
 
