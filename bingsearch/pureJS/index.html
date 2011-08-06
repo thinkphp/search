@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <title>Bing Search in pure JS</title>
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/base/base.css" type="text/css">
+   <style type="text/css">
+body,html{background:#999;color:#000;}
+#doc{background:#fff;border:1em solid #fff;}
+form{background:#ccc;padding:.5em;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+h1{color:#030;margin:10px 0;font-size:40px;}
+h2{margin:0;padding:.5em 0;color:#393;}
+h3{margin:0;padding:.5em 0;color:#036;}
+a:link{color:#369;}
+a:visited{color:#999;}
+a:hover{color:#69c;}
+a:active{color:#69c;}
+#related{background:#69c;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-shadow:4px 4px 10px rgba(0,0,0,.7);}
+#related h3{color:#000;padding:.5em;}
+#related a{color:#000;}
+#bingform {background:#369;border-radius:10px;box-shadow:4px 4px 10px rgba(0,0,0,.7);padding: 14px 14px;}
+label{color: #fff}
+input[type=submit]{font-size: 20px;margin-left: 10px}
+input[type=text]{			
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+      font-size: 24px
+}
+
+input[type=text]:focus{
+      -webkit-box-shadow:0 0 25px #ccc;
+	-moz-box-shadow:0 0 25px #ccc;
+	box-shadow:0 0 25px #ccc;
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      transform: scale(1.05);
+}
+   </style>
+</head>
+<body class="yui-skin-sam">
+<div id="doc" class="yui-t7">
+   <div id="hd" role="banner"><h1>Bing Search in Pure JS</h1></div>
+   <div id="bd" role="main">
+	<div class="yui-g">
+
+           <form action="http://www.bing.com/search" id="bingform">
+             <div>
+                <label for="q">Search Bing:</label>
+                <input type="text" id="q" name="q" placeholder="enter a term" required/> 
+                <input type="submit" id="send" name="send" value="Go!"/> 
+             </div> 
+           </form>
+
+	</div>
+
+           <div id="results"></div>
+
+	</div>
+   <div id="ft" role="contentinfo"><p>@<a href="http://twitter.com/thinkphp">thinkphp</a></p></div>
+</div>
+<script type="text/javascript" src="bingsearch.js"></script>
+</body>
+</html>
