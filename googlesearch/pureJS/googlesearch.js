@@ -36,7 +36,7 @@
 
       function init() {
 
-          f    = document.getElementById('bingform'),
+          f    = document.getElementById('googleform'),
           send = document.getElementById('send'),
           q    = document.getElementById('q'),
           resultscontainer = document.getElementById('results');

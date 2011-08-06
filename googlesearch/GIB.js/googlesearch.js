@@ -34,10 +34,10 @@
 
       function init() {
 
-          f    = $.ID('bingform'),
+          f    = $.ID('googleform'),
           send = $.ID('send'),
           q    = $.ID('q'),
-          resultscontainer = $.ID('results');
+          resultscontainer = $.ID('results');alert(q);
           if(f && resultscontainer && send && q) {
              $.addListener(f,'submit', googlesearch.get, false);
           }
